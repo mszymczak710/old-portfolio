@@ -1,0 +1,24 @@
+#right_container{
+	float: right;
+	position: relative;
+	width: 29%;
+	margin-left: 1%;
+	height: 10em;
+}
+
+.education_photo1 {
+	width: 40%;
+	border: 1px solid black;
+	position: absolute; top: 15%;
+}
+
+.education_photo2 {
+	width: 20%;	
+	position: absolute; top: 55%; left: 10%;
+}
+ 
+.education_photo1, .education_photo2 {
+	opacity: 100%;
+	display: block;
+}
+

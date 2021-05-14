@@ -1,0 +1,32 @@
+#right_container {
+	float: right;
+	position: relative;
+	width: 29%;
+	margin-left: 1%;
+	height: 10em;
+}
+
+.interests_photo1 {
+	width: 20%;
+	position: absolute; left: 25%; 
+}
+
+.interests_photo2 {
+	width: 20%;
+	position: absolute; right: 10%; top: 5%;
+}
+
+.interests_photo3 {
+	width: 45%;
+	position: absolute; left: 50%;  top: 50%;
+}
+
+.interests_photo4 {
+	width: 30%;
+	position: absolute; left: 5%; top: 70%;
+}
+
+.interests_photo1, .interests_photo2, .interests_photo3, .interests_photo4 {
+	opacity: 100%;
+	display: block;
+}
