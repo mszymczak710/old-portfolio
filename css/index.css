@@ -1,11 +1,19 @@
+section > article {
+	width: 70%;
+	float: left;
+	position: relative;
+}
+
 #my_photo {
-	width: 30%;
-	min-width: 100px;
+	width: 35%;
+	min-width: 75px;
 	float: right; 
-	border: 2px solid #964B00;
 	display: block;
-	margin: 4%;
+	margin-bottom: 4%;
+	margin-top: 4%;
+	margin-right: 20%;
 	opacity: 100%;
+	border-radius: 100px;
 }
 
 #right_container{
@@ -24,10 +32,7 @@
 	float: left;
 	text-align: justify;
 	padding: 1% 2%;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-radius: 15px;
 }
 
 

@@ -1,3 +1,9 @@
+section > article {
+	width: 70%;
+	float: left;
+	position: relative;
+}
+
 #right_container {
 	float: right;
 	position: relative;

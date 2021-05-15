@@ -15,7 +15,7 @@ header, nav, section, article, footer {
 }
 
 html {
-	background: url("background.png") no-repeat center fixed; 
+	background: url("photos/background.png") no-repeat center fixed; 
 	background-size: cover;
 }
 
@@ -40,10 +40,9 @@ header > h1{
 	font-size: 3em;
 	padding-bottom: 0.5%;
 	padding-top: 0.5%;
-	margin-top: 5%;
-
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	margin-top: 2.5%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 	font-family: 'Poiret One', cursive;
 }
 
@@ -79,19 +78,21 @@ header > nav div a {
 	position: relative;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	color: LightSkyBlue;
+	font-weight: bold;
+	color: #99ccff;
 	text-decoration: none;
 }
 
 header > nav a:hover {
-	border-bottom: 4px solid;
+	border-bottom: 4px groove;
 	border-color: #185db8;
 	color: CornflowerBlue;
+	font-weight: bold;
 	display: block;
 }
 
 header > nav a.active {
-	border-bottom: 4px solid;
+	border-bottom: 4px groove;
 	border-color: #185db8;
 }
 
@@ -109,20 +110,11 @@ section > h2 {
 	padding-bottom: 0.75%;
 }
 
-section > article {
-	width: 70%;
-	float: left;
-	position: relative;
-}
-
 section, footer {
 	text-align: left;
 	border: 1px solid white;
 	margin-top: 1.5%;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-radius: 15px;
 }
 
 /* Stopka */
@@ -135,7 +127,7 @@ footer {
 }
 
 li {
-	list-style-type:circle;
+	list-style-type: circle;
 	margin-left: 2%;
 }
 
@@ -156,38 +148,3 @@ a:hover {
 	width: 20px; 
 	opacity: 100%;
 }
-
-
-/* For smailer smartphones  */
-
-@media screen and (max-width: 769px){
-	header > nav {
-		width: 100%;
-		text-align: center;
-		float: left;
-		display: table;
-	}
-	
-	header > nav div {
-		width: 100%;
-		display: block; 
-	}
-	
-	header > nav div a {
-		padding-top: 3%;
-		padding-bottom: 3%;
-	}
-	
-	header > nav div a.active {
-		border-bottom: 4px solid crimson;
-	}
-}	
-
-/* For tablets and larger smartphones  */
-
-
-
-
-
-
-/* For larger desktops and monitors */

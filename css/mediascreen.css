@@ -1,0 +1,59 @@
+/* For smailer smartphones  */
+
+@media screen and (max-width: 480px){
+	section {
+		font-size: 0.75em;
+	}
+	
+	#contact, footer{
+		font-size: 0.5em;
+	}
+
+	header > nav {
+		width: 90%;
+		text-align: center;
+		float: left;
+		display: table;
+		border-bottom: 1px solid white;
+	}
+	
+	header > nav div {
+		width: 100%;
+		display: block; 
+	}
+	
+	header > nav div a {
+		padding-top: 3%;
+		padding-bottom: 3%;
+		font-size: 0.75em;
+	}
+	
+	header > nav div a.active {
+		border-bottom: 4px solid crimson;
+	}
+	
+	header > h1{
+		font-size: 2em;
+	}
+	
+	section > h2 {
+		font-size: 1.25em;
+	}
+}	
+
+/* For tablets and larger smartphones  */
+
+@media screen and (min-width: 481px) and (max-width: 768){
+
+
+
+}
+
+
+/* For larger desktops and monitors */
+
+
+@media screen and (min-width: 1280px) {
+
+
+}
