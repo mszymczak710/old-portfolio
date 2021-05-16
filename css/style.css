@@ -35,7 +35,7 @@ header > h1, header > nav, section, footer {
 	margin-right: 5%;
 }
 
-header > nav, header > h1, #host, #host_eng {
+header > nav, header > h1 {
 	border-top: 1px solid white;
 	border-left: 1px solid white; 
 	border-right: 1px solid white;
@@ -134,12 +134,12 @@ a:hover {
 #host, #host_eng {
 	position: fixed; bottom: 0px; right: 0px;	
 	background-color: rgba(0,0,0, 0.75);
-	margin-right: 1%;
 	padding: 0.25%;
 	text-align: center;
 	float: right;
+	border-top: 1px solid white;
+	border-left: 1px solid white; 
 	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
 }
 
 #host img {
