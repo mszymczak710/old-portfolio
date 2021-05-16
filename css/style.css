@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-/* For laptops, larger tablets  */
+/* For laptops (min width: 1500px; max width: 2048px */
 
 header, nav, section, article, footer {
   display: block;
@@ -23,58 +23,53 @@ body {
 	width: 100%;
 }
 
-/* Nagłówek */
-
 header > h1, section, footer {
-	background-color: #000614;
+	background-color: rgba(0,6,20, 0.8);
+	margin-top: 2%;
+	float: left;
+}
+
+header > h1, header > nav, section, footer {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: 5%;
-	float: left;
-	opacity: 95%;
 }
 
-header > h1{
-	color: dodgerblue;
-	text-align: center;
-	font-size: 3em;
-	padding-bottom: 0.5%;
-	padding-top: 0.5%;
-	margin-top: 2.5%;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	font-family: 'Poiret One', cursive;
-}
-
-header > nav, header > h1 {
+header > nav, header > h1, #host {
 	border-top: 1px solid white;
 	border-left: 1px solid white; 
 	border-right: 1px solid white;
 }
 
-/* Menu nawigacyjne */
+header > h1{
+	color: dodgerblue;
+	text-align: center;
+	font-size: 3.5em;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	font-family: 'Poiret One', cursive;
+}
 
 header > nav {
-	background-color: #000614;
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
 	text-align: center;
 	display: table;
 }
 
 header > nav div {
-	width: 14.5%;
+	width: 14%;
 	display: table-cell;
 	position: relative;
-	background-color: #000614;
+	background-color: rgba(0,6,20,0.9);
 }
+
 header > nav div a {
 	display: inline-block;
 	width: 100%;
 	text-align: center;
 	font-family: 'Poiret One', cursive;
-	font-size: 1em;
+	font-size: 1.25em;
 	position: relative;
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -84,7 +79,7 @@ header > nav div a {
 }
 
 header > nav a:hover {
-	border-bottom: 4px groove;
+	border-bottom: 5px groove;
 	border-color: #185db8;
 	color: CornflowerBlue;
 	font-weight: bold;
@@ -92,46 +87,36 @@ header > nav a:hover {
 }
 
 header > nav a.active {
-	border-bottom: 4px groove;
+	border-bottom: 5px groove;
 	border-color: #185db8;
 }
 
-/* Sekcja główna */
-
-section {
+section > article {
+	padding-top: 0.75%;
 	color: white;
 	font-size: 1.25em;
-	padding: 1.5% 2%;
-	
 }
 
 section > h2 {
 	font-size: 1.75em;
-	padding-bottom: 0.75%;
+	color: white;
 }
 
 section, footer {
+	padding: 1.5% 2%;
 	text-align: left;
 	border: 1px solid white;
-	margin-top: 1.5%;
 	border-radius: 15px;
 }
 
-/* Stopka */
-
-footer {
-	background-color: #000614;
-	color: white;
+footer, #host {
 	font-size: 1em;
-	padding: 1% 2%;
+	color: white;
 }
 
 li {
-	list-style-type: circle;
 	margin-left: 2%;
 }
-
-/* Linki */
 
 a {
 	color: silver;
@@ -142,9 +127,25 @@ a:hover {
 	color: gray;
 }
 
-/* Flagi */
-
 .flags {
 	width: 20px; 
-	opacity: 100%;
+}
+
+#host {
+	width: 15%;
+	position: fixed; bottom: 0px; right: 0px;	
+	background-color: rgba(0,0,0, 0.75);
+	margin-right: 1%;
+	padding: 0.5%;
+	text-align: center;
+	float: right;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#host img {
+	position: relative; top: 2px;
+	padding-left: 1%;
+	margin-top: 2.5%;
+	width: 25%;
 }

@@ -12,7 +12,6 @@ section > article {
 	margin-bottom: 4%;
 	margin-top: 4%;
 	margin-right: 20%;
-	opacity: 100%;
 	border-radius: 100px;
 }
 
@@ -21,8 +20,8 @@ section > article {
 	width: 30%;
 }
 
-.contact {
-	background-color: #000614;
+#contact {
+	background-color: rgba(0,6,20, 0.8);
 	color: white;
 	font-size: 1em;
 	width: 90%;
@@ -30,10 +29,27 @@ section > article {
 	margin-left: 5%;
 	margin-right: 5%;
 	float: left;
-	text-align: justify;
+	text-align: left;
 	padding: 1% 2%;
 	border-radius: 15px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+	#my_photo {
+		margin: 10%;
+	}
+}
 
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	#my_photo {
+		width: 60%;
+		margin: 7.5%;
+	}
+}
 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	#my_photo {
+		width: 50%;
+		margin: 7.5%;
+	}
+}
