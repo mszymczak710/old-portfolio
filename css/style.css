@@ -35,7 +35,7 @@ header > h1, header > nav, section, footer {
 	margin-right: 5%;
 }
 
-header > nav, header > h1, #host {
+header > nav, header > h1, #host, #host_eng {
 	border-top: 1px solid white;
 	border-left: 1px solid white; 
 	border-right: 1px solid white;
@@ -109,7 +109,7 @@ section, footer {
 	border-radius: 15px;
 }
 
-footer, #host {
+footer, #host, #host_eng{
 	font-size: 1em;
 	color: white;
 }
@@ -131,12 +131,11 @@ a:hover {
 	width: 20px; 
 }
 
-#host {
-	width: 15%;
+#host, #host_eng {
 	position: fixed; bottom: 0px; right: 0px;	
 	background-color: rgba(0,0,0, 0.75);
 	margin-right: 1%;
-	padding: 0.5%;
+	padding: 0.25%;
 	text-align: center;
 	float: right;
 	border-top-left-radius: 15px;
@@ -144,8 +143,24 @@ a:hover {
 }
 
 #host img {
-	position: relative; top: 2px;
+	position: relative; top: 1px;
 	padding-left: 1%;
 	margin-top: 2.5%;
 	width: 25%;
 }
+
+#host_eng img {
+	position: relative; top: 1px;
+	padding-left: 1%;
+	margin-top: 2.5%;
+	width: 30%;
+}
+
+#host {
+	width: 15%;
+}
+
+#host_eng {
+	width: 12.5%;
+}
+

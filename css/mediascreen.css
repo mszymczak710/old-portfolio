@@ -51,11 +51,18 @@
 		width: 12.5px;
 	}
 	
-	#host {
+	#host, #host_eng {
 		font-size: 0.5em;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
+	}
+	
+	#host {
 		width: 30%;
+	}
+	
+	#host_eng {
+		width: 25%;
 	}
 }	
 
@@ -112,11 +119,18 @@
 		width: 15px;
 	}
 	
-	#host {
+	#host, #host_eng {
 		font-size: 1em;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
+	}
+	
+	#host {
 		width: 30%;
+	}
+	
+	#host_eng {
+		width: 25%;
 	}
 }
 
@@ -173,11 +187,18 @@
 		width: 15px;
 	}
 	
-	#host {
+	#host, #host_eng {
 		font-size: 1.25em;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
+	}
+	
+	#host {
 		width: 35%;
+	}
+	
+	#host_eng {
+		width: 30%;
 	}
 }
 
@@ -233,11 +254,18 @@
 		width: 15px;
 	}
 	
-	#host {
+	#host, #host_eng {
 		font-size: 1em;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
+	}
+	
+	#host {
 		width: 20%;
+	}
+	
+	#host_eng {
+		width: 15%;
 	}
 }
 
@@ -282,7 +310,7 @@
 		font-size: 1.25em;
 	}
 	
-	#host {
+	#host, #host_eng {
 		font-size: 1.25em;
 	}
 }
