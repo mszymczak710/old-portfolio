@@ -33,7 +33,7 @@
 	}
 
 	header > nav div a:hover {
-		font-size: 90%;
+		font-size: 50%;
 	}
 	
 	section {
@@ -113,7 +113,7 @@
 	}
 
 	header > nav div a:hover {
-		font-size: 90%;
+		font-size: 50%;
 	}
 	
 	section {
@@ -190,7 +190,7 @@
 	}
 
 	header > nav div a:hover {
-		font-size: 90%;
+		font-size: 50%;
 	}
 	
 	section {
@@ -259,6 +259,10 @@
 		padding-bottom: 5%;
 	}
 	
+	header > nav div a:hover {
+		font-size: 50%;
+	}
+	
 	section {
 		border-radius: 10px;
 	}
@@ -321,6 +325,10 @@
 		font-size: 1.25em;
 		padding-top: 5%;
 		padding-bottom: 5%;
+	}
+	
+	header > nav div a:hover {
+		font-size: 50%;
 	}
 	
 	section > h2 {
