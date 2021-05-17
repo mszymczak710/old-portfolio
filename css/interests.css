@@ -61,17 +61,17 @@ section > article {
 	}
 
 	.interests_photo2 {
-		position: absolute;
+		position: absolute; right: 70%; top: 60%;
 		width: 15%;
 	}
 
 	.interests_photo3 {
-		position: absolute; left: 35%; top: 40%;
+		position: absolute; left: 50%; top: 0%;
 		width: 40%;
 	}
 
 	.interests_photo4 {
-		position: absolute; left: 40%; top: 10%;
+		position: absolute; left: 60%; top: 60%;
 		width: 25%;
 	}
 }
@@ -92,16 +92,16 @@ section > article {
 
 	.interests_photo2 {
 		width: 35%;
-		position: absolute; bottom: 20%;
+		position: absolute; top: 10%;
 	}
 
 	.interests_photo3 {
-		width: 70%;
+		width: 80%;
 		position: absolute; left: 10%; 
 	}
 
 	.interests_photo4 {
-		width: 50%;
+		width: 60%;
 		position: absolute; left: 30%; top: 32.5%;
 	}
 }	
@@ -140,17 +140,20 @@ section > article {
 	#right_container{
 		height: 15em;
 	}
+
 	.interests_photo1 {
 		position: absolute;
 	}
+
 	.interests_photo2 {
 		position: absolute; 
 	}
+
 	.interests_photo3 {
 		position: absolute;
 	}
+
 	.interests_photo4 {
 		position: absolute;
 	}
-
 }

@@ -6,7 +6,7 @@ section > article {
 
 #my_photo {
 	width: 35%;
-	min-width: 75px;
+	min-width: 65px;
 	float: right; 
 	display: block;
 	margin-bottom: 4%;
@@ -37,6 +37,13 @@ section > article {
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 	#my_photo {
 		margin: 10%;
+		width: 30%;
+	}
+
+	#contact {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 }
 
@@ -45,11 +52,23 @@ section > article {
 		width: 60%;
 		margin: 7.5%;
 	}
+
+	#contact {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 	#my_photo {
-		width: 50%;
-		margin: 7.5%;
+		width: 60%;
+		margin: 10%;
+	}
+
+	#contact {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 }
