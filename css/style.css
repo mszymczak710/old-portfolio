@@ -79,7 +79,7 @@ header > nav div a {
 }
 
 header > nav a:hover {
-	background-color: rgba(0,0,0,0.9);
+	background-color: rgba(0,0,0,0.75);
 	border-bottom: 5px groove;
 	border-color: #185db8;
 	color: CornflowerBlue;
