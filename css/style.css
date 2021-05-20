@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+/* For laptops (min width: 1500px; max width: 2048px */
+
+header, #desktop_menu, section, article, footer { display: block; }
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	box-sizing: border-box;
+}
+
+html {
+	background: url("photos/background.png") no-repeat center fixed; 
+	background-size: cover;
+}
+
+body { width: 100%; }
+
+header > h1, section, footer, #contact {
+	background-color: rgba(0,6,20, 0.8);
+	float: left;
+}
+
+header > h1, header > #desktop_menu, section, footer, #contact {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+header > h1, header > #desktop_menu {
+	border-top: 1px solid white;
+	border-left: 1px solid white; 
+	border-right: 1px solid white;
+}
+
+header > h1{
+	color: dodgerblue;
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+}
+
+header > #desktop_menu {
+	text-align: center;
+	display: table;
+}
+
+header > #desktop_menu div {
+	width: 14%;
+	display: table-cell;
+	position: relative;
+	background-color: rgba(0,6,20,0.9);
+}
+
+header > #desktop_menu div a {
+	display: inline-block;
+	width: 100%;
+	font-family: 'Poiret One', cursive;
+	position: relative;
+	font-weight: bold;
+	color: #99ccff;
+	text-decoration: none;
+}
+
+header > #desktop_menu div a:hover {
+	background-color: rgba(0,0,0,0.75);
+	border-bottom: 5px groove;
+	border-color: #185db8;
+	color: CornflowerBlue;
+	font-weight: bold;
+	display: block;
+	transition: background-color 0.5s ease, border-bottom 0.5s ease, color 0.5s ease;
+}
+
+header > #desktop_menu div a.active {
+	border-bottom: 5px groove;
+	border-color: #185db8;
+}
+
+header > #mobile_menu {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+.button_menu {
+	width: 100%;
+	background-color: rgba(0,6,20,0.9);
+	color: #99ccff;
+	font-weight: bold;
+	font-family: 'Poiret One', cursive;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	cursor: pointer;
+}	
+
+.button_menu:hover, .button_menu:focus { background-color: rgba (0,0,0,0.75); }
+
+.menu_content {
+	width: 100%;
+	display: none;
+	position: absolute;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	background-color: rgba(0,6,20,0.9);
+	}
+
+.menu_content a {
+	text-align: center;
+	color: #99ccff;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+}
+
+#mobile_menu a.active {
+	background-color: rgba(4,18,39,0.9);
+	color: CornflowerBlue;
+	font-weight: bold;
+}
+
+.show { display: block; }
+
+section > h2, section > article, footer, #contact, #host, #host_eng { color: white; }
+
+section, footer, #contact {
+	text-align: left;
+	border: 1px solid white;
+	transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a {
+	color: silver;
+	text-decoration: none;
+}
+
+a:hover { color: gray; }
+
+#host, #host_eng {
+	line-height: 0;
+	position: fixed; bottom: 0px; right: 0px;	
+	background-color: rgba(0,0,0, 0.75);
+	text-align: center;
+	float: right;
+	border-top: 1px solid white;
+	border-left: 1px solid white; 
+}
+
+#host img, #host_eng img {
+	position: relative;
+	padding: 2% 0% 0% 1%;
+	margin-top: 2.5%;
+}

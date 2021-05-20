@@ -11,22 +11,37 @@
 	<title> Mateusz Mariusz Szymczak - strona WWW</title>
 	<link rel="shortcut icon" href="css/photos/desktop-icon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/about_me.css">
 	<link rel="stylesheet" href="css/mediascreen.css">
+	<script type="text/javascript" src="javascript/mobile_menu.js"></script>
+	<script type="text/javascript" src="javascript/last_updated.js"></script>
 </head>
 
 <body>
 	<header>
 		<h1> Mateusz Mariusz Szymczak - strona internetowa </h1>
 		
-		<nav>
+		<nav id="desktop_menu">
 			<div><a class="active" href="index.html">O MNIE</a></div>
 			<div><a href="wyksztalcenie.html">WYKSZTAŁCENIE</a></div>
 			<div><a href="doswiadczenie.html">DOŚWIADCZENIE</a></div>
 			<div><a href="umiejetnosci.html">UMIEJĘTNOŚCI</a></div>
 			<div><a href="zainteresowania.html">ZAINTERESOWANIA</a></div>
 			<div><a href="projekty.html">PROJEKTY</a></div>
-			<div><a href="index_eng.html">ENGLISH VERSION <img src="css/photos/flags/flag_of_uk.png" class="flags" alt="Flaga Wielkiej Brytanii"></a></div>
+			<div><a href="about_me.html">ENGLISH VERSION <img src="css/photos/flags/flag_of_uk.png" class="flags" alt="Flaga Wielkiej Brytanii"></a></div>
+		</nav>
+		
+		<nav id="mobile_menu"> 
+			<button onclick="Menu()" class="button_menu"> &#x2630 MENU </button>
+			<div id="myMenu" class="menu_content">
+				<a class="active" href="index.html">O MNIE</a>
+				<a href="wyksztalcenie.html">WYKSZTAŁCENIE</a>
+				<a href="doswiadczenie.html">DOŚWIADCZENIE</a>
+				<a href="umiejetnosci.html">UMIEJĘTNOŚCI</a>
+				<a href="zainteresowania.html">ZAINTERESOWANIA</a>
+				<a href="projekty.html">PROJEKTY</a>
+				<a href="about_me.html">ENGLISH VERSION <img src="css/photos/flags/flag_of_uk.png" class="flags" alt="Flaga Wielkiej Brytanii"></a>
+			</div>
 		</nav>
 	</header>	
 	
@@ -42,8 +57,7 @@
 			<p> 
 				Witaj! Mam na imię Mateusz. Jestem studentem I roku informatyki inżynierskiej
 				na <a target="_blank" href="http://www.mat.umk.pl">Wydziale Matematyki i Informatyki </a> <a target="_blank" href="http://umk.pl"> Uniwersytetu Mikołaja Kopernika w Toruniu</a>. <br>
-				Strona ta jest moim życiorysem (CV).
-				Zapraszam Cię do zajrzenia wgłąb strony. 
+				Strona ta jest moim życiorysem (CV). Zapraszam Cię do zajrzenia wgłąb strony. 
 			</p>
 		</article>	
 	</section>
@@ -58,7 +72,7 @@
 					
 	<footer>
 		<p>
-			Ostatnia aktualizacja: 16.05.2021.<br>
+			Ostatnia aktualizacja: <span id="last_updated"></span>.<br>
 			Stronę wykonał <b>Mateusz Mariusz Szymczak</b>.<br> 
 			&copy Wszelkie prawa zastrzeżone.
 		</p>

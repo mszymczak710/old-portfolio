@@ -13,20 +13,35 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/interests.css">
 	<link rel="stylesheet" href="css/mediascreen.css">
+	<script type="text/javascript" src="javascript/mobile_menu.js"></script>
+	<script type="text/javascript" src="javascript/last_updated.js"></script>
 </head>
 
 <body>
 	<header>
 		<h1> Mateusz Mariusz Szymczak - website </h1>
 		
-		<nav>
-			<div><a href="index_eng.html">ABOUT ME</a></div>
+		<nav id="desktop_menu">
+			<div><a href="about_me.html">ABOUT ME</a></div>
 			<div><a href="education.html">EDUCATION</a></div>
 			<div><a href="experience.html">WORKING EXPERIENCE</a></div>
 			<div><a href="skills.html">SKILLS</a></div>
 			<div><a class="active" href="interests.html">INTERESTS</a></div>
 			<div><a href="projects.html">PROJECTS</a></div>
 			<div><a href="index.html">POLSKA WERSJA <img src="css/photos/flags/flag_of_poland.png" class="flags" alt="Flaga Polski"></a></div>
+		</nav>
+		
+		<nav id="mobile_menu"> 
+			<button onclick="Menu()" class="button_menu"> &#x2630 MENU </button>
+			<div id="myMenu" class="menu_content">
+				<a href="about_me.html">ABOUT ME</a>
+				<a href="education.html">EDUCATION</a>
+				<a href="experience.html">WORKING EXPERIENCE</a>
+				<a href="skills.html">SKILLS</a>
+				<a class="active" href="interests.html">INTERESTS</a>
+				<a href="projects.html">PROJECTS</a>
+				<a href="index.html">POLSKA WERSJA <img src="css/photos/flags/flag_of_poland.png" class="flags" alt="Flaga Polski"></a>
+			</div>
 		</nav>
 	</header>
 	
@@ -55,7 +70,7 @@
 					
 	<footer>
 		<p>
-			Last updated: 16.05.2021.<br>
+			Last updated: <span id="last_updated"></span>.<br>
 			This page was created by <b>Mateusz Mariusz Szymczak</b>.<br> 
 			&copy All rights reserved.
 		</p>

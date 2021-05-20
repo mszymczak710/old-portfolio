@@ -13,20 +13,35 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/education.css">
 	<link rel='stylesheet' href="css/mediascreen.css">		
+	<script type="text/javascript" src="javascript/mobile_menu.js"></script>
+	<script type="text/javascript" src="javascript/last_updated.js"></script>
 </head>
 
 <body>
 	<header>
 		<h1> Mateusz Mariusz Szymczak - strona internetowa </h1>
 		
-		<nav>
+		<nav id="desktop_menu">
 			<div><a href="index.html">O MNIE</a></div>
 			<div><a class="active" href="wyksztalcenie.html">WYKSZTAŁCENIE</a></div>
 			<div><a href="doswiadczenie.html">DOŚWIADCZENIE</a></div>
 			<div><a href="umiejetnosci.html">UMIEJĘTNOŚCI</a></div>
 			<div><a href="zainteresowania.html">ZAINTERESOWANIA</a></div>
 			<div><a href="projekty.html">PROJEKTY</a></div>
-			<div><a href="index_eng.html">ENGLISH VERSION <img src="css/photos/flags/flag_of_uk.png" class="flags" alt="Flaga Wielkiej Brytanii"></a></div>
+			<div><a href="about_me.html">ENGLISH VERSION <img src="css/photos/flags/flag_of_uk.png" class="flags" alt="Flaga Wielkiej Brytanii"></a></div>
+		</nav>
+		
+		<nav id="mobile_menu"> 
+			<button onclick="Menu()" class="button_menu"> &#x2630 MENU </button>
+			<div id="myMenu" class="menu_content">
+				<a href="index.html">O MNIE</a>
+				<a class="active" href="wyksztalcenie.html">WYKSZTAŁCENIE</a>
+				<a href="doswiadczenie.html">DOŚWIADCZENIE</a>
+				<a href="umiejetnosci.html">UMIEJĘTNOŚCI</a>
+				<a href="zainteresowania.html">ZAINTERESOWANIA</a>
+				<a href="projekty.html">PROJEKTY</a>
+				<a href="about_me.html">ENGLISH VERSION <img src="css/photos/flags/flag_of_uk.png" class="flags" alt="Flaga Wielkiej Brytanii"></a>
+			</div>
 		</nav>
 	</header>	
 	
@@ -51,7 +66,7 @@
 					
 	<footer>
 		<p>
-			Ostatnia aktualizacja: 16.05.2021.<br>
+			Ostatnia aktualizacja: <span id="last_updated"></span>.<br>
 			Stronę wykonał <b>Mateusz Mariusz Szymczak</b>.<br> 
 			&copy Wszelkie prawa zastrzeżone.
 		</p>
