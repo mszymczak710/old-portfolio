@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="Visual Studio Code">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="description" content="Strona domowa (życiorys zawodowy)">
+	<meta name="author" content="Mateusz Szymczak">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Mateusz Mariusz Szymczak - strona WWW</title>
+	<link rel="shortcut icon" href="css/photos/desktop-icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/scripts.js"></script>
+</head>
+<body>
+	<header class="header">
+		<h1 class="header__title"> Mateusz Mariusz Szymczak - strona internetowa </h1>
+	</header>
+
+		<nav class="menu">
+			<button class="menu__btn">☰ Menu</button>
+			<ul class="menu__list" id="js_menu">
+				<li class="menu__item"><a title="O mnie" class="menu__link" href="index.html">O mnie</a></li>
+				<li class="menu__item"><a title="Wykształcenie" class="menu__link" href="wyksztalcenie.html">Wykształcenie</a></li>
+				<li class="menu__item"><a title="Umiejętności" class="menu__link menu__link--active" href="umiejetnosci.html">Umiejętności</a></li>
+				<li class="menu__item"><a title="Zainteresowania" class="menu__link" href="zainteresowania.html">Zainteresowania</a></li>
+				<li class="menu__item"><a title="Portfolio" class="menu__link" href="portfolio.html">Portfolio</a></li>
+				<li class="menu__item"><a title="Kontakt" class="menu__link" href="kontakt.html">Kontakt</a></li>
+				<li class="menu__item"><a title="English Version" class="menu__link" href="about_me.html">English Version <img src="css/photos/flags/flag_of_uk.png" class="flags" alt="Flaga Wielkiej Brytanii"></a></li>
+			</ul>
+		</nav>
+
+
+	<section class="section">
+		<article class="article">
+			<h2 class="article__title"> Posiadane przeze mnie umiejętności to między innymi: </h2>
+				<ul class="article__list">
+					<li> podstawowa znajomość języków programowania C/C++; </li>
+					<li> (elementarna) wiedza w zakresie projektowania stron WWW; </li>
+					<li> umiejętność pracy z systemem operacyjnym Linux; </li>
+					<li> <img class="flags" src="css/photos/flags/flag_of_uk.png" alt="Flaga Wielkiej Brytanii"> język angielski - poziom B1/B2; </li>
+					<li> <img class="flags" src="css/photos/flags/flag_of_spain.png" alt="Flaga Hiszpanii"> język hiszpański - poziom A1; </li>
+					<li> <img class="flags" src="css/photos/flags/flag_of_russia.png" alt="Flaga Rosji"> język rosyjski - poziom A1/A2;</li>
+					<li> prawo jazdy kat. B. </li>
+				</ul>
+		</article>
+	</section>
+
+	<footer class="footer">
+			Ostatnia aktualizacja: <span id="last_updated"></span><br>
+			Stronę wykonał <b>Mateusz Mariusz Szymczak</b>.<br>
+			&copy Wszelkie prawa zastrzeżone.
+	</footer>
+
+	<div class="host">
+		Obsługiwane przez: <a title="Darmowy hosting stron www: netlify.com. Stwórz swoją stronę internetową za darmo!" target="_blank" href="https://netlify.com"> <img class="host__img" alt="Logo Hosta" src="css/photos/netlify_logo.png"> </a>
+	</div>
+</body>
+</html>
