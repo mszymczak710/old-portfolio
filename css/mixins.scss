@@ -1,0 +1,29 @@
+@mixin font($size: false, $colour: false, $weight: false) {
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+}
+
+$browser-context: 16;
+
+@function PxToEm($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+   $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
+@mixin border($direction, $width, $style, $color) {
+    border-#{$direction}: $width $style $color;
+}
+
+@mixin position($width, $margin_left, $margin_right) {
+    width: $width;
+    margin-left: $margin_left;
+    margin-right: $margin_left;
+}

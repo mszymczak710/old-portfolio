@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+@import "variables";
+@import "mixins";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background: url("photos/background.png") no-repeat center fixed;
+	background-size: cover;
+}
+
+body {
+	width: 100%;
+	color: white;
+	font-family: $font-family-primary;
+}
+
+.header, .menu, .section, .footer {
+	@include position(90%, 5%, 5%);
+	background-color: rgba(4,15,7, 0.9);
+}
+
+.header, .menu__list, .section, .host {
+	display: flex;
+}
+
+.header {
+	border: 1px solid white;
+	border-top-left-radius: PxToEm(15px);
+	border-top-right-radius: PxToEm(15px);
+	justify-content: center;
+	margin-top: PxToEm(40px);
+	padding: PxToEm(20px);
+
+	&__title{
+		font-family: $font-family-secondary;
+		@include font(PxToEm(40px), #00ff00, bold);
+	}
+}
+
+.menu{
+	margin-bottom: PxToEm(50px);
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+
+	&__list {
+		list-style-type: none;
+		position: relative;
+	}
+
+	&__item{
+		flex: 1;
+		font-family: $font-family-secondary;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__link{
+		display: block;
+		padding: PxToEm(10px) 0;
+		@include font(PxToEm(16px), #98FB98, bold);
+
+		&:hover {
+			background-color: rgba(4,15,7, 0.5);
+			border-bottom: 4px groove #00cc00;
+			color: #ffff00;
+			transition: background-color 0.3s ease, border-bottom 0.3s ease, color 0.3s ease;
+		}
+
+		&--active{
+			color: #ffff00;
+			border-bottom: 4px groove #00cc00;
+		}
+	}
+
+	&__btn{
+		@extend .menu__item;
+		width: 100%;
+		border-radius: 0px;
+		padding: PxToEm(10px);
+		background-color: rgba(4,15,7, 0.9);
+		@include font(PxToEm(20px), #98FB98, bold);
+	}
+}
+
+.flags {
+	width: PxToEm(20px);
+}
+
+.section{
+	padding: PxToEm(20px) PxToEm(30px);
+	border: 1px solid white;
+	border-radius: PxToEm(15px);
+	margin-bottom: PxToEm(40px);
+
+	.article{
+		font-size: PxToEm(22px);
+
+		&__title{
+			font-size: PxToEm(26px);
+			margin-bottom: PxToEm(5px);
+		}
+
+		&__list{
+			margin-left: PxToEm(15px);
+		}
+	}
+}
+
+.footer {
+	padding: PxToEm(16px);
+	border: 1px solid white;
+	border-radius: PxToEm(15px);
+	margin-bottom: PxToEm(50px);
+	font-size: PxToEm(20px);
+}
+
+.host {
+	position: fixed; bottom: 0; right: 0;
+	background-color: rgba(0,0,0,0.9);
+	width: PxToEm(215px);
+	display: flex;
+	justify-content: space-between;
+	padding: PxToEm(5px);
+	border-top-left-radius: PxToEm(15px);
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	font-size: PxToEm(15px);
+
+	&__img{
+		width: PxToEm(60px);
+	}
+}
+
+a {
+	color: silver;
+	text-decoration: none;
+
+	&:hover { color: gray; }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    html{
+        font-size: 6px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    html{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    html{
+        font-size: 12px;
+    }
+
+    .menu {
+        &__list {
+            flex-wrap: wrap;
+        }
+        &__item{
+            flex-basis: 33%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1500px){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 2048px){
+    html{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 2048px){
+    html{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .menu{
+        &__list {
+            flex-direction: column;
+            display: none;
+
+            &--show {
+                display: block;
+            }
+        }
+    }
+
+    .section {
+        align-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 769px){
+    .menu{
+        &__btn{
+            display: none;
+        }
+    }
+}

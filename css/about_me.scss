@@ -1,0 +1,16 @@
+@import "mixins";
+@import "variables";
+
+.section{
+    flex-direction: row;
+	justify-content: space-between;
+    .article{
+        width: PxToEm(600px);
+    }
+
+    &__image{
+        width: PxToEm(150px);
+        border-radius: 50%;
+        margin-right: PxToEm(100px);
+    }
+}
