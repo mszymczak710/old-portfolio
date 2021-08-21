@@ -1,159 +1,73 @@
-section > article {
-	width: 70%;
-	float: left;
-	position: relative;
+.section {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-#right_container {
-	float: right;
-	position: relative;
-	width: 29%;
-	margin-left: 1%;
-	height: 10em;
+.section .article {
+  margin-right: 0.625em;
 }
 
-.interests_photo1 {
-	width: 20%;
-	min-width: 40px;
-	position: absolute; left: 25%; 
+.section__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15.625em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.interests_photo2 {
-	width: 20%;
-	min-width: 40px;
-	position: absolute; right: 10%; top: 5%;
+.section__images--first {
+  width: 6.25em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
-.interests_photo3 {
-	width: 45%;
-	min-width: 45px;
-	position: absolute; left: 50%;  top: 50%;
+.section__images--second {
+  width: 6.25em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
 }
 
-.interests_photo4 {
-	width: 30%;
-	min-width: 50px;
-	position: absolute; left: 5%; top: 70%;
+.section__images--third {
+  width: 12.5em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
-.interests_photo1, .interests_photo2, .interests_photo3, .interests_photo4 {
-	display: block;
+.section__images--fourth {
+  width: 9.375em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
-	section > article {
-		width: 100%;
-		float: left;
-		position: relative;
-	}
-
-	#right_container {
-		float: left;
-		position: relative;
-		width: 99%;
-		margin-left: 1%;
-		height: 7.5em;
-	}
-	
-	.interests_photo1 {
-		position: absolute; left: 10%; top: 5%;
-		width: 15%;
-	}
-
-	.interests_photo2 {
-		position: absolute; right: 70%; top: 60%;
-		width: 15%;
-	}
-
-	.interests_photo3 {
-		position: absolute; left: 50%; top: 0%;
-		width: 40%;
-	}
-
-	.interests_photo4 {
-		position: absolute; left: 60%; top: 60%;
-		width: 25%;
-	}
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section .article {
+    margin-bottom: 1.25em;
+  }
 }
-
-@media screen and (min-width: 481px) and (max-width: 768px){
-	#right_container {
-		float: right;
-		position: relative;
-		width: 29%;
-		margin-left: 1%;
-		height: 20em;
-	}
-	
-	.interests_photo1 {
-		width: 35%;
-		position: absolute; left: 10%; 
-	}
-
-	.interests_photo2 {
-		width: 35%;
-		position: absolute; top: 10%;
-	}
-
-	.interests_photo3 {
-		width: 80%;
-		position: absolute; left: 10%; 
-	}
-
-	.interests_photo4 {
-		width: 60%;
-		position: absolute; left: 30%; top: 32.5%;
-	}
-}	
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-	#right_container {
-		float: right;
-		position: relative;
-		width: 29%;
-		margin-left: 1%;
-		height: 20em;
-	}
-	
-	.interests_photo1 {
-		width: 35%;
-		position: absolute; left: 10%; 
-	}
-
-	.interests_photo2 {
-		width: 35%;
-		position: absolute; top: 15%;
-	}
-
-	.interests_photo3 {
-		width: 70%;
-		position: absolute; left: 5%; top: 40%;
-	}
-
-	.interests_photo4 {
-		width: 50%;
-		position: absolute; left: 40%; top: 75%;
-	}
-}
-
-@media screen and (min-width: 2048px){
-	#right_container{
-		height: 15em;
-	}
-
-	.interests_photo1 {
-		position: absolute;
-	}
-
-	.interests_photo2 {
-		position: absolute; 
-	}
-
-	.interests_photo3 {
-		position: absolute;
-	}
-
-	.interests_photo4 {
-		position: absolute;
-	}
-}
+/*# sourceMappingURL=interests.css.map */

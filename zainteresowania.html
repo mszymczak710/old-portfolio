@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl">
-	
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="generator" content="Geany">
+	<meta name="generator" content="Visual Studio Code">
 	<meta name="keywords" content="HTML, CSS, JavaScript">
 	<meta name="description" content="Strona domowa (życiorys zawodowy)">
 	<meta name="author" content="Mateusz Szymczak">
@@ -12,76 +12,55 @@
 	<link rel="shortcut icon" href="css/photos/desktop-icon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/interests.css">
-	<link rel='stylesheet' href="css/mediascreen.css">		
-	<script type="text/javascript" src="javascript/mobile_menu.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="javascript/last_updated.js"></script>
+	<script type="text/javascript" src="javascript/scripts.js"></script>
 </head>
-
 <body>
-	<header>
-		<h1> Mateusz Mariusz Szymczak - strona internetowa </h1>
-		
-		<nav id="desktop_menu">
-			<div><a href="index.html">O MNIE</a></div>
-			<div><a href="wyksztalcenie.html">WYKSZTAŁCENIE</a></div>
-			<div><a href="doswiadczenie.html">DOŚWIADCZENIE</a></div>
-			<div><a href="umiejetnosci.html">UMIEJĘTNOŚCI</a></div>
-			<div><a class="active" href="zainteresowania.html">ZAINTERESOWANIA</a></div>
-			<div><a href="projekty.html">PROJEKTY</a></div>
-			<div><a href="about_me.html">ENGLISH VERSION <img src="css/photos/flags/flag_of_uk.png" class="flags" alt="Flaga Wielkiej Brytanii"></a></div>
+	<header class="header">
+		<h1 class="header__title"> Mateusz Mariusz Szymczak - strona internetowa </h1>
+	</header>
+
+		<nav class="menu">
+			<button class="menu__btn">☰ Menu</button>
+			<ul class="menu__list" id="js_menu">
+				<li class="menu__item"><a title="O mnie" class="menu__link" href="index.html">O mnie</a></li>
+				<li class="menu__item"><a title="Wykształcenie" class="menu__link" href="wyksztalcenie.html">Wykształcenie</a></li>
+				<li class="menu__item"><a title="Umiejętności" class="menu__link" href="umiejetnosci.html">Umiejętności</a></li>
+				<li class="menu__item"><a title="Zainteresowania" class="menu__link menu__link--active" href="zainteresowania.html">Zainteresowania</a></li>
+				<li class="menu__item"><a title="Portfolio" class="menu__link" href="portfolio.html">Portfolio</a></li>
+				<li class="menu__item"><a title="Kontakt" class="menu__link" href="kontakt.html">Kontakt</a></li>
+				<li class="menu__item"><a title="English Version" class="menu__link" href="about_me.html">English Version <img src="css/photos/flags/flag_of_uk.png" class="flags" alt="Flaga Wielkiej Brytanii"></a></li>
+			</ul>
 		</nav>
-		
-		<nav id="mobile_menu"> 
-			<button onclick="Menu()" class="button_menu"> &#x2630 MENU </button>
-			<div id="myMenu" class="menu_content">
-				<a href="index.html">O MNIE</a>
-				<a href="wyksztalcenie.html">WYKSZTAŁCENIE</a>
-				<a href="doswiadczenie.html">DOŚWIADCZENIE</a>
-				<a href="umiejetnosci.html">UMIEJĘTNOŚCI</a>
-				<a class="active" href="zainteresowania.html">ZAINTERESOWANIA</a>
-				<a href="projekty.html">PROJEKTY</a>
-				<a href="about_me.html">ENGLISH VERSION <img src="css/photos/flags/flag_of_uk.png" class="flags" alt="Flaga Wielkiej Brytanii"></a>
-			</div>
-		</nav>
-	</header>	
-	
-	<section>
-			<h2>
-				Zainteresowania
-			</h2>
-		<article>
-			<p> 
-				Na co dzień interesuję się programowaniem w językach C oraz C++. Uczę się również projektowania stron WWW. 
+
+
+	<section class="section">
+		<article class="article">
+			<h2 class="article__title"> Moje zainteresowania </h2>
+				<p>Na co dzień interesuję się programowaniem w językach C oraz C++. Uczę się również projektowania stron WWW.
 				Kolejnym z moich zainteresowań jest system operacyjny Linux. Zdobywam doświadczenie w owym systemie,
 				używając na co dzień systemu Fedora 34. Wolny czas staram się spędzać w miarę możliwości aktywnie - uczęszczam na siłownię,
 				uwielbiam spacery po toruńskiej Starówce. W życiu zawsze towarzyszy mi muzyka.
-				Dodatkowo interesuję się oglądaniem piłki nożnej i mieszanych sztuk walki (MMA). 
-			</p>
+				Dodatkowo interesuję się oglądaniem piłki nożnej i mieszanych sztuk walki (MMA).</p>
 		</article>
-				
-			<div id="right_container">
-				<a target="_blank" href="https://pl.wikipedia.org/wiki/Linux"> <img class="interests_photo1" img src="css/photos/linux.png"> </a>
-				<a target="_blank" href="https://getfedora.org/pl/"> <img class="interests_photo2" img src="css/photos/fedora.png"> </a>
-				<a target="_blank" href="https://www.kurshtml.edu.pl/html/zielony.html"> <img class="interests_photo3" img src="css/photos/html-css-js.png"> </a>
-				<a target="_blank" href="https://pl.wikipedia.org/wiki/C%2B%2B#Nowe_cechy_j%C4%99zyka_C++_wzgl%C4%99dem_j%C4%99zyka_ANSI_C_z_1989_roku"> <img class="interests_photo4" img src="css/photos/cpp-c.png"> </a>
-			</div>
-			
-	</section>			
-					
-	<footer>
-		<p>
-			Ostatnia aktualizacja: <span id="last_updated"></span>.<br>
-			Stronę wykonał <b>Mateusz Mariusz Szymczak</b>.<br> 
+
+		<div class="section__images">
+			<img class="section__images--first" img src="css/photos/linux.png">
+			<img class="section__images--second" img src="css/photos/fedora.png">
+			<img class="section__images--third" img src="css/photos/html-css-js.png">
+			<img class="section__images--fourth" img src="css/photos/cpp-c.png">
+		</div>
+
+	</section>
+
+	<footer class="footer">
+			Ostatnia aktualizacja: <span id="last_updated"></span><br>
+			Stronę wykonał <b>Mateusz Mariusz Szymczak</b>.<br>
 			&copy Wszelkie prawa zastrzeżone.
-		</p>
 	</footer>
-	
-	<div id="host">
-		<p> 
-			Obsługiwane przez: <a title="Darmowy hosting stron www: netlify.com. Stwórz swoją stronę internetową za darmo!" target="_blank" href="https://netlify.com"> <img alt="Logo Hosta" src="css/photos/netlify_logo.png"> </a>
-		</p>
-	</div>	
-	
+
+	<div class="host">
+		Obsługiwane przez: <a title="Darmowy hosting stron www: netlify.com. Stwórz swoją stronę internetową za darmo!" target="_blank" href="https://netlify.com"> <img class="host__img" alt="Logo Hosta" src="css/photos/netlify_logo.png"> </a>
+	</div>
 </body>
 </html>
