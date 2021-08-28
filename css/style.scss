@@ -67,7 +67,7 @@ body {
 		@include font(PxToEm(16px), #98FB98, bold);
 
 		&:hover {
-			background-color: rgba(4,15,7, 0.5);
+			background-color: rgba(green, 0.2);
 			border-bottom: 4px groove #00cc00;
 			color: #ffff00;
 			transition: background-color 0.3s ease, border-bottom 0.3s ease, color 0.3s ease;
