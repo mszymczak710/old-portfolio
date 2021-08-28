@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="pl">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="generator" content="Visual Studio Code">
@@ -9,10 +12,9 @@
 	<link rel="shortcut icon" href="css/photos/desktop-icon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/form.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript/scripts.js"></script>
-	<script type="text/javascript" src="javascript/contact_form.js"></script>
+	<script type="text/javascript" src="javascript/contact-form.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -36,31 +38,34 @@
 	<section class="section">
 		<article class="article">
 			<h2 class="article__title">Kontakt:</h2>
-                <p>Jeśli jesteś zainteresowany współpracą ze mną, napisz do mnie na adres: <a href="mailto:mszymczak710@mat.umk.pl">mszymczak710@mat.umk.pl</a> lub skorzystaj z formularza kontaktowego.</p>
+                <p>Jeśli jesteś zainteresowany współpracą ze mną, napisz do mnie na adres: <a href="mailto:mszymczak710@o2.pl">mszymczak710@o2.pl</a> lub skorzystaj z formularza kontaktowego.</p>
 		</article>
 
-		<form class="contact-form" action="#" method="post">
+		<form class="contact-form" onsubmit = "return validate();">
+
 			<p class="contact-form__title">Formularz kontaktowy</p>
 
+			<div id="error_message"></div>
+
 			<div class="contact-form__fullname">
-				<input type="text" name="name" id="name" placeholder="Imię*">
-				<input type="text" name="surname" id="surname" placeholder="Nazwisko*">
+				<input type="text" placeholder="Imię*" id="name">
+				<input type="text" placeholder="Nazwisko*" id="surname">
 			</div>
 
 			<div class="contact-form__field">
-				<input type="text" name="mail" id="mail" placeholder="Adres e-mail*">
+				<input type="text" placeholder="Adres e-mail*" id="email">
 			</div>
 
 			<div class="contact-form__field">
-				<input type="text" name="phone" id="phone" placeholder="Telefon">
+				<input type="text" placeholder="Telefon*" id="phone">
 			</div>
 
 			<div class="contact-form__field">
-				<input type="text" name="subject" id="subject" placeholder="Temat*">
+				<input type="text" placeholder="Temat*" id="subject">
 			</div>
 
 			<div class="contact-form__field">
-				<textarea name="message" rows="10" id="message" placeholder="Wpisz tutaj swoją wiadomość..."></textarea>
+				<textarea rows="10" placeholder="Wpisz tutaj swoją wiadomość..." id="message"></textarea>
 			</div>
 
 			<div class="contact-form__btn">

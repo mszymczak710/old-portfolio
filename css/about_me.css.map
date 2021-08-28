@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,QAAQ,CAAA;EACJ,cAAc,EAAE,GAAG;EACtB,eAAe,EAAE,aAAa;CAU9B;;AAZD,AAGI,QAHI,CAGJ,QAAQ,CAAA;EACJ,KAAK,ECUH,MAAwB;CDT7B;;AAEA,AAAD,eAAQ,CAAA;EACJ,KAAK,ECMH,OAAwB;EDL1B,aAAa,EAAE,GAAG;EAClB,YAAY,ECIV,MAAwB;CDH7B",
+    "sources": [
+        "about_me.scss",
+        "mixins.scss",
+        "variables.scss"
+    ],
+    "names": [],
+    "file": "about_me.css"
+}

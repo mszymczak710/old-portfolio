@@ -11,10 +11,9 @@
 	<title> Mateusz Szymczak - website WWW</title>
 	<link rel="shortcut icon" href="css/photos/desktop-icon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/about_me.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript/scripts.js"></script>
-    <script type="text/javascript" src="javascript/contact-form_eng.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -24,56 +23,32 @@
 		<nav class="menu">
 			<button class="menu__btn">☰ Menu</button>
 			<ul class="menu__list" id="js_menu">
-				<li class="menu__item"><a title="About Me" class="menu__link" href="about_me.html">About Me</a></li>
+				<li class="menu__item"><a title="About Me" class="menu__link menu__link--active" href="about_me.html">About Me</a></li>
 				<li class="menu__item"><a title="Education" class="menu__link" href="education.html">Education</a></li>
 				<li class="menu__item"><a title="Skills" class="menu__link" href="skills.html">Skills</a></li>
 				<li class="menu__item"><a title="Interests" class="menu__link" href="interests.html">Interests</a></li>
 				<li class="menu__item"><a title="Portfolio" class="menu__link" href="portfolio_eng.html">Portfolio</a></li>
-				<li class="menu__item"><a title="Contact" class="menu__link menu__link--active" href="contact.html">Contact</a></li>
+				<li class="menu__item"><a title="Contact" class="menu__link" href="contact.html">Contact</a></li>
 				<li class="menu__item"><a title="Polska Wersja" class="menu__link" href="index.html">Polska Wersja <img src="css/photos/flags/flag_of_poland.png" class="flags" alt="Flaga Polski"></a></li>
 			</ul>
 		</nav>
 
-        <section class="section">
-            <article class="article">
-                <h2 class="article__title">Contact:</h2>
-                    <p>If you are interested in working with me, please send me an email at <a href="mailto:mszymczak710@o2.pl">mszymczak710@o2.pl</a> or use the contact form.</p>
-              </article>
 
-            <form class="contact-form" onsubmit = "return validate();">
+	<section class="section">
+		<article class="article">
+			<h2 class="article__title"> Some information about me... </h2>
 
-                <p class="contact-form__title">Contact form</p>
+				<p>Welcome! My name is Mateusz. I am a student of the first year of Computer Science<br>
+				at the <a target="_blank" href="https://www.mat.umk.pl/en/web/en/home">Faculty of Mathematics and Computer Science </a> at the <a target="_blank" href="http://umk.pl/en/">Nicolaus Copernicus University in Torun</a>.<br>
+				This page is my curriculum vitae. I invite you to take a look inside the site.</p>
 
-				<div id="error_message"></div>
+		</article>
 
-                <div class="contact-form__fullname">
-                    <input type="text" placeholder="Name*" id="name">
-                    <input type="text" placeholder="Surname*" id="surname">
-                </div>
+		<img class="section__image" src="css/photos/my_photo.png" alt="Moja fotografia">
 
-                <div class="contact-form__field">
-                    <input type="text" placeholder="E-mail adress*" id="email">
-                </div>
+	</section>
 
-                <div class="contact-form__field">
-                    <input type="text" placeholder="Phone number*" id="phone">
-                </div>
-
-                <div class="contact-form__field">
-                    <input type="text" placeholder="Subject*" id="subject">
-                </div>
-
-                <div class="contact-form__field">
-                    <textarea rows="10" placeholder="Enter your message here..." id="message"></textarea>
-                </div>
-
-                <div class="contact-form__btn">
-                    <button type="submit" name="submit">Send message</button>
-                </div>
-            </form>
-        </section>
-
-    <footer class="footer">
+	<footer class="footer">
 			Last updated: <span id="last_updated"></span><br>
 			This page was created by <b>Mateusz Mariusz Szymczak</b>.<br>
 			&copy All rights reserved.
